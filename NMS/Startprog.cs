@@ -27,7 +27,7 @@ public class StartProg
         foreach (char let in message.ToString())
         {
             if (!fullMessage.Length.Equals(0) &&
-                char.ToLower(fullMessage[fullMessage.Length - 1]) < char.ToLower(let))
+                char.ToLower(fullMessage[fullMessage.Length - 1]) <= char.ToLower(let))
             {
                 fullMessage.Append(let);
                 continue;
