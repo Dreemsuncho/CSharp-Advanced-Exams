@@ -1,0 +1,6 @@
+D:\My works\c#\CSharpCustomAdvanceExams\SecondNature\bin\Debug\SecondNature.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\SecondNature\bin\Debug\SecondNature.exe
+D:\My works\c#\CSharpCustomAdvanceExams\SecondNature\bin\Debug\SecondNature.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\SecondNature\obj\Debug\SecondNature.csprojResolveAssemblyReference.cache
+D:\My works\c#\CSharpCustomAdvanceExams\SecondNature\obj\Debug\SecondNature.exe
+D:\My works\c#\CSharpCustomAdvanceExams\SecondNature\obj\Debug\SecondNature.pdb

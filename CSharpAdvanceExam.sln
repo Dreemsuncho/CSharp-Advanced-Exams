@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMS", "NMS\NMS.csproj", "{0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaturesProphet", "NaturesProphet\NaturesProphet.csproj", "{BADA6837-F5D2-4F51-9965-4404BAABAD91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondNature", "SecondNature\SecondNature.csproj", "{D021C3F4-2BB7-4E6C-9C3D-400AB31EA91F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BADA6837-F5D2-4F51-9965-4404BAABAD91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BADA6837-F5D2-4F51-9965-4404BAABAD91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BADA6837-F5D2-4F51-9965-4404BAABAD91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D021C3F4-2BB7-4E6C-9C3D-400AB31EA91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D021C3F4-2BB7-4E6C-9C3D-400AB31EA91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D021C3F4-2BB7-4E6C-9C3D-400AB31EA91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D021C3F4-2BB7-4E6C-9C3D-400AB31EA91F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
