@@ -48,15 +48,15 @@ public class StartProg
                .ToList()
                .ForEach(c =>
                {
-                  Console.WriteLine(c.Key);
+                   Console.WriteLine(c.Key);
 
-                  c.Value.OrderBy(color => color.Value)
-                         .ThenBy(color => color.Key)
-                         .ToList()
-                         .ForEach(color =>
-                         {
-                             Console.WriteLine("*--{0} | {1}", color.Key, color.Value);
-                         });
+                   c.Value.OrderBy(color => color.Value)
+                          .ThenBy(color => color.Key)
+                          .ToList()
+                          .ForEach(color =>
+                          {
+                              Console.WriteLine("*--{0} | {1}", color.Key, color.Value);
+                          });
                });
     }
 }

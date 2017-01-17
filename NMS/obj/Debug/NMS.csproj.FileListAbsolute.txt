@@ -1,0 +1,5 @@
+D:\My works\c#\CSharpCustomAdvanceExams\NMS\bin\Debug\NMS.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\NMS\bin\Debug\NMS.exe
+D:\My works\c#\CSharpCustomAdvanceExams\NMS\bin\Debug\NMS.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\NMS\obj\Debug\NMS.exe
+D:\My works\c#\CSharpCustomAdvanceExams\NMS\obj\Debug\NMS.pdb

@@ -4,3 +4,9 @@ D:\My works\c#\CSharpAdvanceExam\AsheshOfRoses\bin\Debug\AsheshOfRoses.pdb
 D:\My works\c#\CSharpAdvanceExam\AsheshOfRoses\obj\Debug\AsheshOfRoses.csprojResolveAssemblyReference.cache
 D:\My works\c#\CSharpAdvanceExam\AsheshOfRoses\obj\Debug\AsheshOfRoses.exe
 D:\My works\c#\CSharpAdvanceExam\AsheshOfRoses\obj\Debug\AsheshOfRoses.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\AsheshOfRoses\bin\Debug\AsheshOfRoses.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\AsheshOfRoses\bin\Debug\AsheshOfRoses.exe
+D:\My works\c#\CSharpCustomAdvanceExams\AsheshOfRoses\bin\Debug\AsheshOfRoses.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\AsheshOfRoses\obj\Debug\AsheshOfRoses.csprojResolveAssemblyReference.cache
+D:\My works\c#\CSharpCustomAdvanceExams\AsheshOfRoses\obj\Debug\AsheshOfRoses.exe
+D:\My works\c#\CSharpCustomAdvanceExams\AsheshOfRoses\obj\Debug\AsheshOfRoses.pdb
