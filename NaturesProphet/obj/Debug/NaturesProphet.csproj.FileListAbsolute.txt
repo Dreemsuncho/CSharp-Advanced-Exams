@@ -1,0 +1,6 @@
+D:\My works\c#\CSharpCustomAdvanceExams\NaturesProphet\bin\Debug\NaturesProphet.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\NaturesProphet\bin\Debug\NaturesProphet.exe
+D:\My works\c#\CSharpCustomAdvanceExams\NaturesProphet\bin\Debug\NaturesProphet.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\NaturesProphet\obj\Debug\NaturesProphet.csprojResolveAssemblyReference.cache
+D:\My works\c#\CSharpCustomAdvanceExams\NaturesProphet\obj\Debug\NaturesProphet.exe
+D:\My works\c#\CSharpCustomAdvanceExams\NaturesProphet\obj\Debug\NaturesProphet.pdb
