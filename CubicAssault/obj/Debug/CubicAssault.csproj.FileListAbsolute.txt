@@ -1,0 +1,6 @@
+D:\My works\c#\CSharpCustomAdvanceExams\CubicAssault\bin\Debug\CubicAssault.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\CubicAssault\bin\Debug\CubicAssault.exe
+D:\My works\c#\CSharpCustomAdvanceExams\CubicAssault\bin\Debug\CubicAssault.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\CubicAssault\obj\Debug\CubicAssault.csprojResolveAssemblyReference.cache
+D:\My works\c#\CSharpCustomAdvanceExams\CubicAssault\obj\Debug\CubicAssault.exe
+D:\My works\c#\CSharpCustomAdvanceExams\CubicAssault\obj\Debug\CubicAssault.pdb

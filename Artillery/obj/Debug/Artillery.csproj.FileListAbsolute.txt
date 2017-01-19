@@ -1,0 +1,6 @@
+D:\My works\c#\CSharpCustomAdvanceExams\Artillery\bin\Debug\Artillery.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\Artillery\bin\Debug\Artillery.exe
+D:\My works\c#\CSharpCustomAdvanceExams\Artillery\bin\Debug\Artillery.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\Artillery\obj\Debug\Artillery.csprojResolveAssemblyReference.cache
+D:\My works\c#\CSharpCustomAdvanceExams\Artillery\obj\Debug\Artillery.exe
+D:\My works\c#\CSharpCustomAdvanceExams\Artillery\obj\Debug\Artillery.pdb

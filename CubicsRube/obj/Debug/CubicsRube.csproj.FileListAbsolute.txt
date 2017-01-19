@@ -1,0 +1,6 @@
+D:\My works\c#\CSharpCustomAdvanceExams\CubicsRube\bin\Debug\CubicsRube.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\CubicsRube\bin\Debug\CubicsRube.exe
+D:\My works\c#\CSharpCustomAdvanceExams\CubicsRube\bin\Debug\CubicsRube.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\CubicsRube\obj\Debug\CubicsRube.csprojResolveAssemblyReference.cache
+D:\My works\c#\CSharpCustomAdvanceExams\CubicsRube\obj\Debug\CubicsRube.exe
+D:\My works\c#\CSharpCustomAdvanceExams\CubicsRube\obj\Debug\CubicsRube.pdb
