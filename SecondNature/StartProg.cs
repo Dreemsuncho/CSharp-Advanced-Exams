@@ -30,7 +30,7 @@ public class StartProg
             else if (currFlower < currBucket)
             {
                 flowers.RemoveAt(0);
-                if(buckets.Count > 1)
+                if (buckets.Count > 1)
                 {
                     int remainWater = currBucket - currFlower;
 
