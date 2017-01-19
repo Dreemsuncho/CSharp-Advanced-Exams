@@ -1,0 +1,6 @@
+D:\My works\c#\CSharpCustomAdvanceExams\WrongSolutionCubicAssault\bin\Debug\WrongSolutionCubicAssault.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\WrongSolutionCubicAssault\bin\Debug\WrongSolutionCubicAssault.exe
+D:\My works\c#\CSharpCustomAdvanceExams\WrongSolutionCubicAssault\bin\Debug\WrongSolutionCubicAssault.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\WrongSolutionCubicAssault\obj\Debug\WrongSolutionCubicAssault.csprojResolveAssemblyReference.cache
+D:\My works\c#\CSharpCustomAdvanceExams\WrongSolutionCubicAssault\obj\Debug\WrongSolutionCubicAssault.exe
+D:\My works\c#\CSharpCustomAdvanceExams\WrongSolutionCubicAssault\obj\Debug\WrongSolutionCubicAssault.pdb

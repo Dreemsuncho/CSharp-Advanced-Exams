@@ -10,7 +10,6 @@ public class StartProg
         Dictionary<string, Dictionary<string, long>> soldiers = new Dictionary<string, Dictionary<string, long>>();
 
         ReadTheInput(soldiers);
-        TryTransformSoldiers(soldiers);
 
         PrlongSoldiersInRegion(soldiers);
     }
@@ -27,24 +26,6 @@ public class StartProg
         });
     }
 
-    private static void TryTransformSoldiers(Dictionary<string, Dictionary<string, long>> soldiers)
-    {
-        List<KeyValuePair<string, Dictionary<string, long>>> transform = soldiers.ToList();
-
-        transform.ForEach(reg =>
-        {
-            if (soldiers[reg.Key]["Green"] >= 1000000)
-            {
-                soldiers[reg.Key]["Red"] += soldiers[reg.Key]["Green"] / 1000000;
-                soldiers[reg.Key]["Green"] = soldiers[reg.Key]["Green"] % 1000000;
-            }
-            if (soldiers[reg.Key]["Red"] >= 1000000)
-            {
-                soldiers[reg.Key]["Black"] += soldiers[reg.Key]["Red"] / 1000000;
-                soldiers[reg.Key]["Red"] = soldiers[reg.Key]["Red"] % 1000000;
-            }
-        });
-    }
 
     private static void ReadTheInput(Dictionary<string, Dictionary<string, long>> soldiers)
     {
@@ -70,6 +51,18 @@ public class StartProg
             }
 
             soldiers[region][soldiersType] += amount;
+
+
+            if (soldiers[region]["Green"] >= 1000000)
+            {
+                soldiers[region]["Red"] += soldiers[region]["Green"] / 1000000;
+                soldiers[region]["Green"] = soldiers[region]["Green"] % 1000000;
+            }
+            if (soldiers[region]["Red"] >= 1000000)
+            {
+                soldiers[region]["Black"] += soldiers[region]["Red"] / 1000000;
+                soldiers[region]["Red"] = soldiers[region]["Red"] % 1000000;
+            }
         }
     }
 }
