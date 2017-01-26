@@ -1,31 +1,32 @@
 ﻿using System;
 using System.Linq;
+using System.Numerics;
 
 public class Startup
 {
     public static void Main()
     {
-        long[] initArray = Console.ReadLine().Split(" ".ToCharArray(),
+        BigInteger[] initArray = Console.ReadLine().Split(" ".ToCharArray(),
                                                       StringSplitOptions.RemoveEmptyEntries)
-                                            .Select(long.Parse)
+                                            .Select(BigInteger.Parse)
                                             .ToArray();
 
         string operations;
-        long currIndex = 0;
+        BigInteger currIndex = 0;
 
         while ((operations = Console.ReadLine()) != "stop")
         {
             string[] operationsArgs = operations.Split();
 
-            long offset = long.Parse(operationsArgs[0]);
+            BigInteger offset = BigInteger.Parse(operationsArgs[0]);
             string operation = operationsArgs[1];
-            long operand = long.Parse(operationsArgs[2]);
+            BigInteger operand = BigInteger.Parse(operationsArgs[2]);
 
 
             currIndex += offset;
             if (currIndex < 0)
             {
-                currIndex = Math.Abs(initArray.Length - currIndex);
+                currIndex = Math.Abs((int)(initArray.Length - currIndex));
                 if (currIndex >= initArray.Length)
                 {
                     currIndex %= initArray.Length;
@@ -35,30 +36,30 @@ public class Startup
 
             currIndex %= initArray.Length;
 
-            switch (char.Parse(operation))
+            switch (Convert.ToChar(operation))
             {
                 case '&':
-                    initArray[currIndex] &= operand;
+                    initArray[(int)currIndex] &= operand;
                     break;
                 case '|':
-                    initArray[currIndex] |= operand;
+                    initArray[(int)currIndex] |= operand;
                     break;
                 case '^':
-                    initArray[currIndex] ^= operand;
+                    initArray[(int)currIndex] ^= operand;
                     break;
                 case '+':
-                    initArray[currIndex] += operand;
+                    initArray[(int)currIndex] += operand;
                     break;
                 case '-':
-                    initArray[currIndex] -= operand;
-                    if (initArray[currIndex] < 0)
-                        initArray[currIndex] = 0;
+                    initArray[(int)currIndex] -= operand;
+                    if (initArray[(int)currIndex] < 0)
+                        initArray[(int)currIndex] = 0;
                     break;
                 case '*':
-                    initArray[currIndex] *= operand;
+                    initArray[(int)currIndex] *= operand;
                     break;
                 case '/':
-                    initArray[currIndex] /= operand;
+                    initArray[(int)currIndex] /= operand;
                     break;
 
                 default:
