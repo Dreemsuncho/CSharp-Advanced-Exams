@@ -1,0 +1,6 @@
+D:\My works\c#\CSharpCustomAdvanceExams\JediMeditation\bin\Debug\JediMeditation.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\JediMeditation\bin\Debug\JediMeditation.exe
+D:\My works\c#\CSharpCustomAdvanceExams\JediMeditation\bin\Debug\JediMeditation.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\JediMeditation\obj\Debug\JediMeditation.csprojResolveAssemblyReference.cache
+D:\My works\c#\CSharpCustomAdvanceExams\JediMeditation\obj\Debug\JediMeditation.exe
+D:\My works\c#\CSharpCustomAdvanceExams\JediMeditation\obj\Debug\JediMeditation.pdb

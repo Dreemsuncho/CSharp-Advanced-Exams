@@ -1,0 +1,6 @@
+D:\My works\c#\CSharpCustomAdvanceExams\Monopoly\bin\Debug\Monopoly.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\Monopoly\bin\Debug\Monopoly.exe
+D:\My works\c#\CSharpCustomAdvanceExams\Monopoly\bin\Debug\Monopoly.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\Monopoly\obj\Debug\Monopoly.csprojResolveAssemblyReference.cache
+D:\My works\c#\CSharpCustomAdvanceExams\Monopoly\obj\Debug\Monopoly.exe
+D:\My works\c#\CSharpCustomAdvanceExams\Monopoly\obj\Debug\Monopoly.pdb

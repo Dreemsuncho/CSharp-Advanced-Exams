@@ -1,0 +1,6 @@
+D:\My works\c#\CSharpCustomAdvanceExams\CollectResources\bin\Debug\CollectResources.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\CollectResources\bin\Debug\CollectResources.exe
+D:\My works\c#\CSharpCustomAdvanceExams\CollectResources\bin\Debug\CollectResources.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\CollectResources\obj\Debug\CollectResources.csprojResolveAssemblyReference.cache
+D:\My works\c#\CSharpCustomAdvanceExams\CollectResources\obj\Debug\CollectResources.exe
+D:\My works\c#\CSharpCustomAdvanceExams\CollectResources\obj\Debug\CollectResources.pdb

@@ -1,0 +1,6 @@
+D:\My works\c#\CSharpCustomAdvanceExams\ArrayManipulator\bin\Debug\ArrayManipulator.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\ArrayManipulator\bin\Debug\ArrayManipulator.exe
+D:\My works\c#\CSharpCustomAdvanceExams\ArrayManipulator\bin\Debug\ArrayManipulator.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\ArrayManipulator\obj\Debug\ArrayManipulator.csprojResolveAssemblyReference.cache
+D:\My works\c#\CSharpCustomAdvanceExams\ArrayManipulator\obj\Debug\ArrayManipulator.exe
+D:\My works\c#\CSharpCustomAdvanceExams\ArrayManipulator\obj\Debug\ArrayManipulator.pdb

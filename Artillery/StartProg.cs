@@ -21,11 +21,13 @@ public class StartProg
 {
     public static void Main()
     {
-        List<Bunker> bunkers = new List<Bunker>();
-        Queue<int> weapons = new Queue<int>();
-        List<Bunker> resultedBunkers = new List<Bunker>();
-
         int maxCapacity = int.Parse(Console.ReadLine());
+
+        Queue<Bunker> bunkers = new Queue<Bunker>();
+        Queue<int> weapons = new Queue<int>();
+
+
+        Regex regex = new Regex(@"[a-zA-Z]");
 
         while (true)
         {
@@ -33,84 +35,65 @@ public class StartProg
             if (input.Equals("Bunker Revision"))
                 break;
 
-            string[] tokens = Regex.Split(input, $"\\s+");
-            tokens.ToList()
-                  .ForEach(tok =>
-                  {
-                      int weapon;
-                      if (int.TryParse(tok, out weapon))
-                      {
-                          weapons.Enqueue(weapon);
-                      }
-                      else
-                      {
-                          bunkers.Add(new Bunker(tok, maxCapacity, new Queue<int>()));
-                      }
-                  });
+            input.Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
+                 .ToList()
+                 .ForEach(tok =>
+                 {
+                     if (regex.IsMatch(tok))
+                     {
+                         bunkers.Enqueue(new Bunker(tok, maxCapacity, new Queue<int>()));
+                     }
+                     else
+                     {
+                         weapons.Enqueue(int.Parse(tok));
+                     }
+                 });
 
 
             while (weapons.Count > 0)
             {
-                int currWep = weapons.Dequeue();
+                int currWep = weapons.Peek();
+                Bunker currBunk = bunkers.Peek();
 
-                bool isInside = false;
-                for (int i = 0; i < bunkers.Count; i++)
+                if (currWep <= currBunk.capacity)
                 {
-                    Bunker currBunker = bunkers[i];
+                    currBunk.capacity -= currWep;
+                    currBunk.weapons.Enqueue(currWep);
+                    weapons.Dequeue();
 
-                    if (currWep <= currBunker.capacity)
+                    if (currBunk.capacity == 0 && bunkers.Count > 1)
                     {
-                        currBunker.capacity -= currWep;
-                        currBunker.weapons.Enqueue(currWep);
-
-                        if (currBunker.capacity.Equals(0))
-                        {
-                            resultedBunkers.Add(currBunker);
-                            bunkers.RemoveAt(0);
-
-                            currBunker = bunkers[0];
-                        }
-                        isInside = true;
-                        break;
+                        Console.WriteLine("{0} -> {1}", currBunk.init, string.Join(", ", currBunk.weapons));
+                        bunkers.Dequeue();
                     }
                 }
-
-                if (bunkers.Count.Equals(1) && !isInside)
+                else if (bunkers.Count > 1)
                 {
-                    if (maxCapacity >= currWep)
+                    if (currBunk.weapons.Count > 1)
                     {
-                        while (bunkers[0].capacity < currWep)
-                        {
-                            int weapCapacity = bunkers[0].weapons.Dequeue();
-                            bunkers[0].capacity += weapCapacity;
-                        }
-                        bunkers[0].capacity -= currWep;
-                        bunkers[0].weapons.Enqueue(currWep);
-
-                        if (bunkers[0].capacity.Equals(0))
-                        {
-                            resultedBunkers.Add(bunkers[0]);
-                            bunkers.RemoveAt(0);
-                        }
+                        Console.WriteLine("{0} -> {1}", currBunk.init, string.Join(", ", currBunk.weapons));
                     }
-                    break;
+                    else
+                    {
+                        Console.WriteLine("{0} -> Empty", currBunk.init);
+                    }
+                    bunkers.Dequeue();
                 }
-            }
-        }
-
-        resultedBunkers.ForEach(bunker =>
-        {
-            Console.WriteLine("{0} -> {1}", bunker.init, string.Join(", ", bunker.weapons));
-        });
-        for (int i = 0; i < bunkers.Count - 1; i++)
-        {
-            if (bunkers[i].weapons.Count.Equals(0))
-            {
-                Console.WriteLine("{0} -> Empty", bunkers[i].init);
-            }
-            else
-            {
-                Console.WriteLine("{0} -> {1}", bunkers[i].init, string.Join(", ", bunkers[i].weapons));
+                else if (maxCapacity >= currWep)
+                {
+                    while (currBunk.capacity < currWep)
+                    {
+                        int firstWep = currBunk.weapons.Dequeue();
+                        currBunk.capacity += firstWep;
+                    }
+                    currBunk.capacity -= currWep;
+                    currBunk.weapons.Enqueue(currWep);
+                    weapons.Dequeue();
+                }
+                else
+                {
+                    weapons.Dequeue();
+                }
             }
         }
     }

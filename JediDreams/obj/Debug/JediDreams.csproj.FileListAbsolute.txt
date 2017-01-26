@@ -1,0 +1,6 @@
+D:\My works\c#\CSharpCustomAdvanceExams\JediDreams\bin\Debug\JediDreams.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\JediDreams\bin\Debug\JediDreams.exe
+D:\My works\c#\CSharpCustomAdvanceExams\JediDreams\bin\Debug\JediDreams.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\JediDreams\obj\Debug\JediDreams.csprojResolveAssemblyReference.cache
+D:\My works\c#\CSharpCustomAdvanceExams\JediDreams\obj\Debug\JediDreams.exe
+D:\My works\c#\CSharpCustomAdvanceExams\JediDreams\obj\Debug\JediDreams.pdb
