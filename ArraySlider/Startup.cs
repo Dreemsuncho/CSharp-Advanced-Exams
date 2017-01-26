@@ -21,16 +21,19 @@ public class Startup
             string operation = operationsArgs[1];
             long operand = long.Parse(operationsArgs[2]);
 
-            if (offset > initArray.Length)
-                offset %= initArray.Length;
 
             currIndex += offset;
-
             if (currIndex < 0)
-                currIndex = (initArray.Length - currIndex) -1;
-         
-            if (currIndex >= initArray.Length)
-                currIndex %= initArray.Length;
+            {
+                currIndex = Math.Abs(initArray.Length - currIndex);
+                if (currIndex >= initArray.Length)
+                {
+                    currIndex %= initArray.Length;
+                    currIndex = (initArray.Length - currIndex);
+                }
+            }
+
+            currIndex %= initArray.Length;
 
             switch (char.Parse(operation))
             {
