@@ -1,0 +1,6 @@
+D:\My works\c#\CSharpCustomAdvanceExams\CommandInterpreter\bin\Debug\CommandInterpreter.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\CommandInterpreter\bin\Debug\CommandInterpreter.exe
+D:\My works\c#\CSharpCustomAdvanceExams\CommandInterpreter\bin\Debug\CommandInterpreter.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\CommandInterpreter\obj\Debug\CommandInterpreter.csprojResolveAssemblyReference.cache
+D:\My works\c#\CSharpCustomAdvanceExams\CommandInterpreter\obj\Debug\CommandInterpreter.exe
+D:\My works\c#\CSharpCustomAdvanceExams\CommandInterpreter\obj\Debug\CommandInterpreter.pdb

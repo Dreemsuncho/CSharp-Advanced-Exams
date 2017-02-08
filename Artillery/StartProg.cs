@@ -1,21 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
-
-class Bunker
-{
-    public string init { get; set; }
-    public int capacity { get; set; }
-    public Queue<int> weapons { get; set; }
-
-    public Bunker(string init, int capacity, Queue<int> weapons)
-    {
-        this.init = init;
-        this.capacity = capacity;
-        this.weapons = weapons;
-    }
-}
 
 public class StartProg
 {
@@ -23,76 +8,54 @@ public class StartProg
     {
         int maxCapacity = int.Parse(Console.ReadLine());
 
-        Queue<Bunker> bunkers = new Queue<Bunker>();
+        Queue<string> bunkers = new Queue<string>();
         Queue<int> weapons = new Queue<int>();
+        int currCapacity = maxCapacity;
 
-
-        Regex regex = new Regex(@"[a-zA-Z]");
-
+        Regex bunkMatch = new Regex(@"[a-zA-Z]");
         while (true)
         {
             string input = Console.ReadLine();
             if (input.Equals("Bunker Revision"))
                 break;
 
-            input.Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
-                 .ToList()
-                 .ForEach(tok =>
-                 {
-                     if (regex.IsMatch(tok))
-                     {
-                         bunkers.Enqueue(new Bunker(tok, maxCapacity, new Queue<int>()));
-                     }
-                     else
-                     {
-                         weapons.Enqueue(int.Parse(tok));
-                     }
-                 });
-
-
-            while (weapons.Count > 0)
+            string[] inputArgs = input.Split();
+            foreach (var token in inputArgs)
             {
-                int currWep = weapons.Peek();
-                Bunker currBunk = bunkers.Peek();
+                if (bunkMatch.IsMatch(token))
+                {
+                    bunkers.Enqueue(token);
+                    continue;
+                }
 
-                if (currWep <= currBunk.capacity)
-                {
-                    currBunk.capacity -= currWep;
-                    currBunk.weapons.Enqueue(currWep);
-                    weapons.Dequeue();
 
-                    if (currBunk.capacity == 0 && bunkers.Count > 1)
-                    {
-                        Console.WriteLine("{0} -> {1}", currBunk.init, string.Join(", ", currBunk.weapons));
-                        bunkers.Dequeue();
-                    }
-                }
-                else if (bunkers.Count > 1)
+                int weapon = int.Parse(token);
+                while (bunkers.Count > 1)
                 {
-                    if (currBunk.weapons.Count > 1)
+                    if (currCapacity >= weapon)
                     {
-                        Console.WriteLine("{0} -> {1}", currBunk.init, string.Join(", ", currBunk.weapons));
+                        currCapacity -= weapon;
+                        weapons.Enqueue(weapon);
+                        continue;
                     }
-                    else
-                    {
-                        Console.WriteLine("{0} -> Empty", currBunk.init);
-                    }
-                    bunkers.Dequeue();
+
+                    Console.WriteLine("{0} -> {1}", bunkers.Dequeue(), weapons.Count > 0 ? string.Join(", ", weapons) : "Empty");
+                    weapons.Clear();
+                    currCapacity = maxCapacity;
                 }
-                else if (maxCapacity >= currWep)
+
+                if (bunkers.Count == 1)
                 {
-                    while (currBunk.capacity < currWep)
+                    if (maxCapacity >= weapon)
                     {
-                        int firstWep = currBunk.weapons.Dequeue();
-                        currBunk.capacity += firstWep;
+                        while (currCapacity < weapon)
+                        {
+                            currCapacity += weapons.Dequeue();
+                        }
+
+                        weapons.Enqueue(weapon);
+                        currCapacity -= weapon;
                     }
-                    currBunk.capacity -= currWep;
-                    currBunk.weapons.Enqueue(currWep);
-                    weapons.Dequeue();
-                }
-                else
-                {
-                    weapons.Dequeue();
                 }
             }
         }

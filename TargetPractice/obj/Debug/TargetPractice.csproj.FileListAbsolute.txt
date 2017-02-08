@@ -1,0 +1,6 @@
+D:\My works\c#\CSharpCustomAdvanceExams\TargetPractice\bin\Debug\TargetPractice.exe.config
+D:\My works\c#\CSharpCustomAdvanceExams\TargetPractice\bin\Debug\TargetPractice.exe
+D:\My works\c#\CSharpCustomAdvanceExams\TargetPractice\bin\Debug\TargetPractice.pdb
+D:\My works\c#\CSharpCustomAdvanceExams\TargetPractice\obj\Debug\TargetPractice.csprojResolveAssemblyReference.cache
+D:\My works\c#\CSharpCustomAdvanceExams\TargetPractice\obj\Debug\TargetPractice.exe
+D:\My works\c#\CSharpCustomAdvanceExams\TargetPractice\obj\Debug\TargetPractice.pdb
