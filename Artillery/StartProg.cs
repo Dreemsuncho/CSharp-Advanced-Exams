@@ -30,13 +30,15 @@ public class StartProg
 
 
                 int weapon = int.Parse(token);
+                bool isContained = false;
                 while (bunkers.Count > 1)
                 {
                     if (currCapacity >= weapon)
                     {
                         currCapacity -= weapon;
                         weapons.Enqueue(weapon);
-                        continue;
+                        isContained = true;
+                        break;
                     }
 
                     Console.WriteLine("{0} -> {1}", bunkers.Dequeue(), weapons.Count > 0 ? string.Join(", ", weapons) : "Empty");
@@ -44,7 +46,7 @@ public class StartProg
                     currCapacity = maxCapacity;
                 }
 
-                if (bunkers.Count == 1)
+                if (!isContained && bunkers.Count == 1)
                 {
                     if (maxCapacity >= weapon)
                     {
